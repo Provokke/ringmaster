@@ -1,0 +1,9 @@
+{application, ringmaster,
+ [{description, "Consistent hash ring with virtual nodes"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications, [kernel, stdlib, crypto]},
+  {env, []},
+  {modules, []},
+  {licenses, ["MIT"]}
+ ]}.
