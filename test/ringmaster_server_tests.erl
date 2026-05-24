@@ -12,3 +12,4 @@ server_test() ->
     ok = ringmaster_server:remove(Pid, a),
     ?assertEqual({ok, b}, ringmaster_server:lookup(Pid, k)),
     ringmaster_server:stop(Pid).
+
