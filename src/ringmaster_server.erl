@@ -34,4 +34,3 @@ handle_call({replicas, Key, N}, _From, Ring) ->
     {reply, ringmaster_ring:replicas(Key, N, Ring), Ring}.
 
 handle_cast(_Msg, Ring) -> {noreply, Ring}.
-

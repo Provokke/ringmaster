@@ -69,4 +69,3 @@ collect([{_, Node} | Rest], Wanted, Acc) ->
 rebuild(#ring{vnodes = VNodes, members = Members} = Ring) ->
     Points = [{hash({Node, I}), Node} || Node <- Members, I <- lists:seq(1, VNodes)],
     Ring#ring{points = lists:sort(Points)}.
-
